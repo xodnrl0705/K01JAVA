@@ -81,6 +81,9 @@ public class QuHashSet {
 			System.out.println(av.toString());			
 		}
 		
+		
+		
+		
 		//이름으로 검색
 		Scanner sc = new Scanner(System.in);
 		System.out.println("검색할 이름:");

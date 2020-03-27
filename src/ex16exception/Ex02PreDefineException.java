@@ -112,7 +112,7 @@ public class Ex02PreDefineException {
 			System.out.println(toDay.getTime());
 			
 		}
-		catch(NumberFormatException e) {
+		catch(NullPointerException e) {
 			System.out.println("toDay 참조변수는 null입니다.");
 			System.out.println("예외메세지:" + e.getMessage());
 		}

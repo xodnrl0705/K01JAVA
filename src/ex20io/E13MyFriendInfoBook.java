@@ -143,23 +143,7 @@ public class E13MyFriendInfoBook {
 }
 
 class FriendInfoHandler{
-	public void saveFriendInfo() {
-		try {
-			ObjectOutputStream out = new ObjectOutputStream(
-					new FileOutputStream("src/ex20io/friend_info.obj")
-					);			
-			//myFriends 객체배열에 저장된 친구의 정보만큼 반복
-			for(int i=0; i<numOfFriends; i++) {
-				//객체배열의 i번째 요소를 파일로 저장
-				out.writeObject(myFriends[i]);
-			}
-		}
-		catch (Exception e) {
-			System.out.println("예외발생");
-			e.printStackTrace();
-		}
-				
-	}
+	
 	//멤버변수
 	/*
 	Friend타입의 객체배열은 하위클래스인 High, Univ객체를 
@@ -286,5 +270,21 @@ class FriendInfoHandler{
 			System.out.println("==데이터("+deleteIndex+"번)가 삭제되었습니다.==");
 		}
 	}
-
+	public void saveFriendInfo() {
+		try {
+			ObjectOutputStream out = new ObjectOutputStream(
+					new FileOutputStream("src/ex20io/friend_info.obj")
+					);			
+			//myFriends 객체배열에 저장된 친구의 정보만큼 반복
+			for(int i=0; i<numOfFriends; i++) {
+				//객체배열의 i번째 요소를 파일로 저장
+				out.writeObject(myFriends[i]);
+			}
+		}
+		catch (Exception e) {
+			System.out.println("예외발생");
+			e.printStackTrace();
+		}
+				
+	}
 }

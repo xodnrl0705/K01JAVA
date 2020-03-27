@@ -33,7 +33,7 @@ public class Person {
 	public int hashCode() {
 		final int prime = 31;
 		int result = 1;
-		result = prime * result + age;
+		//result = prime * result + age;
 		result = prime * result + ((name == null) ? 0 : name.hashCode());
 		return result;
 	}
@@ -44,8 +44,8 @@ public class Person {
 		//자동호출되는지 확인
 		System.out.println("오버라이딩한 equals()메소드 호출");
 		
-		if(comparePerson.age == this.age &&
-				comparePerson.name.equals(this.name)) {
+		if(comparePerson.name.equals(this.name) &&
+				comparePerson.age == this.age) {
 			return true;
 		}
 		else {
