@@ -44,7 +44,7 @@ public class IConnectImpl implements IConnect {
     */
    @Override
    public void execute() {
-      //하는일 없음 마치 노희종
+      //하는일 없음 
    }
 
    @Override

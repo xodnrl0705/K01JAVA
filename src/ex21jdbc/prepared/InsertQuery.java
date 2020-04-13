@@ -1,7 +1,6 @@
 package ex21jdbc.prepared;
 
 import java.util.Scanner;
-
 import ex21jdbc.connect.IConnectImpl;
 
 public class InsertQuery extends IConnectImpl{
