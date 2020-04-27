@@ -1,32 +1,34 @@
-import java.util.Arrays;
-
-interface A{
-	int A = 7, B = 4, C=2;
-}
+import java.io.PrintWriter;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Set;
 
 public class ex01 {
 
 	public static void main(String[] args) {
+	
 		
-		String[][] a = {
-				{"1", "2", "3"},
-				{"4", "5", "x"}
-				
-		};
-		String[][] b = {
-				{"1", "2", "3"},
-				{"4", "x", "6"}
-				
-		};
-		String[][] c = {
-				{"1", "2", "3"},
-				{"4", "5", "x"}
-		};
+		Map<String,String> clientMap = new HashMap<String, String>();
 		
-		System.out.println(Arrays.equals(a, b));
-		System.out.println(Arrays.equals(a, c));
-		System.out.println(Arrays.deepEquals(a, b));
-		System.out.println(Arrays.deepEquals(a, c));
+		clientMap.put("age", "여자");
+		clientMap.put("gender", "남자");
+		clientMap.put("address", "가산디지털단지");
+		
+		String name = "age"
+				+ "";
+		//
+		Set<String> keys = clientMap.keySet();
+		System.out.println("목록");
+		for(String key : keys) {
+			if(name.equals(key)) {
+				System.out.println("동일한 이름이 있습니다."+ name);
+				break;
+			}
+	
+		}//
+		
+
 	}
 
 }
+
